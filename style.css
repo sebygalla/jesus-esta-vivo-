@@ -1,0 +1,411 @@
+body {
+  font-size: 15pt;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.contenedor__general {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.contenedor__elemento {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-decoration: none; */
+}
+
+
+
+
+
+/*contenedor flecha viene*/
+
+.elemento__1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  width: 5%;
+  background: rgb(15, 31, 30);
+
+
+}
+
+.img__1 {
+  width: 63px;
+
+}
+
+
+
+
+/*contenedor cruz*/
+
+.elemento__2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  width: 6%;
+  background: blue;
+}
+
+.vertical {
+  width: 5px;
+  height: 55px;
+  background: black;
+}
+
+.horizontal {
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 25px;
+}
+
+
+/*contenedor tumba*/
+
+.elemento__3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+
+  width: 10%;
+  background: green;
+
+
+}
+
+.circulo__1 {
+  width: 3em;
+  height: 3em;
+  background: rgba(0, 0, 0, 0.513);
+  position: relative;
+  border-radius: 100%;
+  animation: mymove 5s ease-in-out infinite;
+
+}
+
+
+.circulo__2 {
+  width: 3em;
+  height: 3em;
+  border: 3px solid black;
+  border-radius: 100%;
+  position: absolute;
+
+}
+
+@keyframes mymove {
+  0% {
+    right: 0px;
+  }
+
+  25% {
+    right: 21px;
+  }
+
+  50% {
+    right: 21px;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
+
+
+
+
+/*contenedor flecha q va */
+
+.elemento__4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  width: 5%;
+  background: #EA9306;
+}
+
+.img__4 {
+  width: 63px;
+  position: relative;
+  transform: rotate(200deg);
+}
+
+
+/*contenedor flecha q vuelve */
+
+.contenedor__5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  width: 4%;
+  background: #4C5BCC;
+}
+
+.img__5 {
+  width: 63px;
+  color: white;
+  position: relative;
+  transform: rotate(-20deg);
+  /* Equal to rotateZ(45deg) */
+
+}
+
+
+@media (max-width: 360px) {
+
+  .contenedor__general {
+    background: #a9adcb;
+  }
+
+  /* descendio */
+  .img__1 {
+    width: 32px;
+  }
+
+  /*elemento Cruz*/
+  .elemento__2 {
+    width: 10%;
+    background: blue;
+  }
+
+  .vertical {
+    width: 2.5px;
+    height: 30px;
+  }
+
+  .horizontal {
+    width: 20px;
+    height: 2.5px;
+    top: 18px;
+  }
+
+  /*contenedor tumba*/
+  .elemento__3 {
+    width: 23%;
+
+  }
+
+  .circulo__1 {
+    width: 32px;
+    height: 32px;
+  }
+
+
+  .circulo__2 {
+    width: 32px;
+    height: 32px;
+  }
+
+
+  /*ascendio */
+  .img__4 {
+    width: 32px;
+    background: #a9adcb;
+  }
+
+
+  /*vuelve */
+  .img__5 {
+    width: 32px;
+    background: red;
+  }
+
+
+
+
+
+}
+
+
+@media (max-width: 575px) {
+
+  .contenedor__general {
+    background: #a9adcb;
+  }
+
+  /* descendio */
+  .img__1 {
+    width: 32px;
+  }
+
+  /*elemento Cruz*/
+  .elemento__2 {
+    width: 8%;
+  }
+
+  .vertical {
+    width: 2.5px;
+    height: 30px;
+  }
+
+  .horizontal {
+    width: 20px;
+    height: 2.5px;
+    top: 18px;
+  }
+
+  /*contenedor tumba*/
+  .elemento__3 {
+    width: 15%;
+
+  }
+
+  .circulo__1 {
+    width: 32px;
+    height: 32px;
+  }
+
+  .circulo__2 {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+  }
+
+  @keyframes mymove {
+    0% {
+      right: -5px;
+    }
+
+    25% {
+      right: 18px;
+    }
+
+    50% {
+      right: 18px;
+    }
+
+    100% {
+      right: -5px;
+    }
+  }
+
+  /*ascendio */
+  .elemento__4 {
+    width: 5%;
+  }
+
+  .img__4 {
+    width: 32px;
+    background: #a9adcb;
+  }
+
+  /*vuelve */
+  .img__5 {
+    width: 32px;
+    background: red;
+  }
+
+}
+
+@media (max-width: 770px) {
+
+  .contenedor__general {
+    background: #a9adcb;
+  }
+
+  /* descendio */
+  .img__1 {
+    width: 32px;
+  }
+
+  /*elemento Cruz*/
+  .elemento__2 {
+    width: 6%;
+  }
+
+  .vertical {
+    width: 2.5px;
+    height: 30px;
+  }
+
+  .horizontal {
+    width: 20px;
+    height: 2.5px;
+    top: 18px;
+  }
+
+  /*contenedor tumba*/
+  .elemento__3 {
+    width: 11%;
+  }
+
+  .circulo__1 {
+    width: 32px;
+    height: 32px;
+  }
+
+  .circulo__2 {
+    width: 32px;
+    height: 32px;
+    margin-left: 18px;
+  }
+
+  @keyframes mymove {
+    0% {
+      right: -5px;
+    }
+
+    25% {
+      right: 18px;
+    }
+
+    50% {
+      right: 18px;
+    }
+
+    100% {
+      right: -5px;
+    }
+  }
+
+  /*ascendio */
+  .elemento__4 {
+    width: 5%;
+  }
+
+  .img__4 {
+    width: 32px;
+    background: #a9adcb;
+  }
+
+  /*vuelve */
+  .img__5 {
+    width: 32px;
+    background: red;
+  }
+
+}
+
+}
