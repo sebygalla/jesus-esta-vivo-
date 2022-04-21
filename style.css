@@ -3,6 +3,7 @@
 body {
   font-size: 15pt;
   font-family: 'Open Sans', sans-serif;
+  transition: .3s ease all;
 }
 
 * {
@@ -22,8 +23,6 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-
 }
 
 .contenedor__elemento {
@@ -35,18 +34,70 @@ ul {
   /* text-decoration: none; */
 }
 
-.elemento__texto{
+.elemento__texto {
   width: 100%;
   text-align: center;
   margin: 2em;
 }
 
-.elemento__titulo{
+.elemento__titulo {
   font-size: 22px;
   font-weight: 600;
 }
 
+/* Dark mode */
+.switch {
+  background: #343D58;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  margin-bottom: 100px;
+}
 
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch.active {
+  background: orange;
+  color: #000;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+body.dark {
+  background: #000;
+}
 
 
 
@@ -286,23 +337,81 @@ ul {
     background: white;
   }
 
-  .elemento__texto{
+  .elemento__texto {
     width: 80%;
     text-align: center;
     margin: 1.5em;
   }
-  
-  .elemento__titulo{
+
+  .elemento__titulo {
     font-size: 12px;
     font-weight: 600;
   }
-  
+
+
+  /* Dark mode */
+  .switch {
+    background: #343D58;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    margin-bottom: 100px;
+  }
+
+  .switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
+
+  .switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+  }
+
+  .switch.active {
+    background: orange;
+    color: #000;
+  }
+
+  .switch.active::after {
+    right: 0;
+    left: unset;
+  }
+
+  body.dark {
+    background: #000;
+  }
+
+
+
 
   /* descendio */
-  .elemento__1{
+  .elemento__1 {
     width: 15%;
     background: none;
   }
+
   .img__1 {
     width: 44px;
   }
@@ -386,6 +495,65 @@ ul {
   .contenedor__general {
     background: none;
   }
+
+
+
+  /* Dark mode */
+  .switch {
+    background: #343D58;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+    margin-bottom: 100px;
+  }
+
+  .switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+  }
+
+  .switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+  }
+
+  .switch.active {
+    background: orange;
+    color: #000;
+  }
+
+  .switch.active::after {
+    right: 0;
+    left: unset;
+  }
+
+  body.dark {
+    background: #000;
+  }
+
+
+
 
   /* descendio */
   .img__1 {
