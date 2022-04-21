@@ -266,20 +266,22 @@ ul {
 @media (max-width: 575px) {
 
   .contenedor__general {
-    background: #a9adcb;
+    background: white;
   }
 
   /* descendio */
   .elemento__1{
     width: 15%;
+    background: none;
   }
   .img__1 {
-    width: 40px;
+    width: 44px;
   }
 
   /*elemento Cruz*/
   .elemento__2 {
     width: 15%;
+    background: none;
   }
 
   .vertical {
@@ -296,12 +298,14 @@ ul {
   /*contenedor tumba*/
   .elemento__3 {
     width: 20%;
+    background: none;
 
   }
 
   .circulo__1 {
     width: 40px;
     height: 40px;
+    background: black;
   }
 
   .circulo__2 {
@@ -331,17 +335,18 @@ ul {
   /*ascendio */
   .elemento__4 {
     width: 15%;
+    background: none;
   }
 
   .img__4 {
     width: 40px;
-    background: #a9adcb;
+    background: none;
   }
 
   /*vuelve */
   .img__5 {
     width: 40px;
-    background: red;
+    background: none;
   }
 
 }
