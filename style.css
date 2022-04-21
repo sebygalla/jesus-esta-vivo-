@@ -314,7 +314,7 @@ ul {
   }
 
   .vertical {
-    width: 4px;
+    width: 5px;
     height: 40px;
   }
 
@@ -384,7 +384,7 @@ ul {
 @media (max-width: 360px) {
 
   .contenedor__general {
-    background: #a9adcb;
+    background: none;
   }
 
   /* descendio */
@@ -395,7 +395,6 @@ ul {
   /*elemento Cruz*/
   .elemento__2 {
     width: 10%;
-    background: blue;
   }
 
   .vertical {
@@ -411,13 +410,13 @@ ul {
 
   /*contenedor tumba*/
   .elemento__3 {
-    width: 23%;
+    width: 24%;
 
   }
 
   .circulo__1 {
-    width: 32px;
-    height: 32px;
+    width: 37px;
+    height: 37px;
   }
 
 
@@ -430,14 +429,12 @@ ul {
   /*ascendio */
   .img__4 {
     width: 32px;
-    background: #a9adcb;
   }
 
 
   /*vuelve */
   .img__5 {
     width: 32px;
-    background: red;
   }
 
 
