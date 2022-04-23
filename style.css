@@ -803,12 +803,12 @@ body.dark .elemento__titulo {
 
   .vertical {
     width: 4px;
-    height: 30px;
+    height: 33px;
     background: black;
   }
 
   .horizontal {
-    width: 20px;
+    width: 22px;
     height: 4px;
     background-color: black;
     position: absolute;
@@ -822,12 +822,12 @@ body.dark .elemento__titulo {
     justify-content: center;
     padding: 10px;
     position: relative;
-    width: 13%;
+    width: 15%;
   }
 
   .circulo__1 {
-    width: 33px;
-    height: 33px;
+    width: 35px;
+    height: 35px;
     background: black;
     border: 3px solid white;
     position: relative;
@@ -846,7 +846,7 @@ body.dark .elemento__titulo {
 
   @keyframes mymove {
     0% {
-      right: -6px;
+      right: -2px;
     }
 
     25% {
@@ -858,7 +858,7 @@ body.dark .elemento__titulo {
     }
 
     100% {
-      right: -6px;
+      right: -2px;
     }
   }
 
@@ -869,7 +869,7 @@ body.dark .elemento__titulo {
     justify-content: center;
     padding-left: 15px;
     width: 8%;
-    font-size: 30px;
+    font-size: 33px;
     color: #000;
     position: relative;
     transform: rotate(200deg);
@@ -882,7 +882,7 @@ body.dark .elemento__titulo {
     justify-content: center;
     padding: 10px;
     width: 5%;
-    font-size: 30px;
+    font-size: 33px;
     color: #000;
     position: relative;
     transform: rotate(-20deg);
@@ -891,7 +891,7 @@ body.dark .elemento__titulo {
 
   /* switch dark mode */
   .switch {
-    width: 10%;
+    width: 17%;
     background: #343D58;
     border-radius: 1000px;
     border: none;
